@@ -85,7 +85,22 @@ namespace NetSalaryCalculationTask2
         private static void RangeRequirment(ICollection<Tax> taxes, string name, decimal taxPersent)
         {
             Console.WriteLine("Add a number for the lower limit");
-            var lowerNumber = decimal.Parse(Console.ReadLine());
+            decimal lowerNumber = 0;
+
+            while (true)
+            {
+                Console.WriteLine("Add a number for the lower limit");
+                lowerNumber = decimal.Parse(Console.ReadLine());
+                if (lowerNumber <= 1000)
+                {
+                    Console.WriteLine("Add number, greather than 1000!");
+                }
+                else
+                {
+                    break;
+                }
+            }
+
             decimal upperNumber = 0;
 
             while (true)
