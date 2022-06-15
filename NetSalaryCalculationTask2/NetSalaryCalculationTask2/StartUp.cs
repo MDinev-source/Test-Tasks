@@ -15,7 +15,7 @@
                 new Tax {Name="Social contributions", Value = 15, LowLimitSalary=1, UpperLimitSalary=3000}
             };
 
-            //The explanation of how to add new tax to the system is implemented AdminLogic class
+            //The explanation of how to add new taxеs to the system is implemented AdminLogic class
             //AdminLogic.AddTaxes(taxes);
 
             Console.WriteLine("Add your salary");
