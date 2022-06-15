@@ -6,6 +6,7 @@ function visitChildren(el) {
     for (let i = 0; i < elements.length; i++) {
 
         console.log(elements[i].tagName)
+        
         if (elements[i].childElementCount !== 0) {
             visitChildren(elements[i].tagName)
         }
